@@ -96,11 +96,19 @@ b {
 
 /* Header */
 
+<<<<<<< HEAD
+=======
+.header {
+  height: auto;
+}
+
+>>>>>>> 327905fb7b7541b8fe6b98347dfa059d44c42aae
 .header__image {
   background-image: url(/images/home/Clip.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  height: 100%;
 }
 
 .header__heading {
@@ -124,6 +132,7 @@ b {
 
 .header1__heading__button {
   margin-top: 5rem;
+  margin-bottom: 15rem;
 }
 
 h3.header__heading__nostyle {
@@ -276,12 +285,15 @@ h3.culture__heading__nostyle {
     grid-template-columns: 1fr;
   }
 
+  .header {
+    height: 260vh;
+  }
+
   .header__image {
     background-image: url(/images/home/Clip.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
   }
 
   .culture__image {
