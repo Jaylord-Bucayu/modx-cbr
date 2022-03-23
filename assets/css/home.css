@@ -96,13 +96,10 @@ b {
 
 /* Header */
 
-<<<<<<< HEAD
-=======
 .header {
   height: auto;
 }
 
->>>>>>> 327905fb7b7541b8fe6b98347dfa059d44c42aae
 .header__image {
   background-image: url(/images/home/Clip.png);
   background-repeat: no-repeat;
