@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: roboto;
+}
+
+/* Utility Classes */
+
+.container {
+  max-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0px 0px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card__container {
+  height: 400px;
+  width: 350px;
+
+  margin: 0rem 2rem;
+  box-shadow: 1px 13px 14px -9px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 13px 14px -9px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 13px 14px -9px rgba(0, 0, 0, 0.2);
+}
+
+.text-white {
+  color: white;
+}
+
+.card__title {
+  padding: 1rem;
+}
+
+.card__image {
+  background: url(/images/home/hello.png);
+  height: 10rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card__heading1 {
+  padding: 1rem;
+}
+
+.card__heading2 {
+  padding: 1rem;
+}
+
+span {
+  font-weight: 200;
+}
+
+b {
+  font-weight: 500;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  font-size: 1rem;
+  border: 1px solid black;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+  animation: fade;
+}
+
+.btn-white {
+  border: 1px solid white;
+  color: white;
+}
+
+/* Header */
+
+.header {
+}
+
+.header__image {
+  background-image: url(/images/home/Clip.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.header__heading {
+  padding: 80px;
+}
+
+.header__heading > h1 {
+  font-size: 3.5rem;
+  padding: 2rem 0;
+}
+
+.header__heading > h3 {
+  padding: 2rem 0;
+}
+
+.header__heading__data > p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+
+.header1__heading__button {
+  margin-top: 5rem;
+}
+
+h3.header__heading__nostyle {
+  font-weight: 400;
+  font-size: larger;
+  text-transform: uppercase;
+}
+
+/* carousel */
+
+.carousel {
+  position: relative;
+  background: url(/images/home/hello.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.block2__carousel__heading {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color: white;
+}
+
+.block2__carousel__heading > h1 {
+  margin-top: 1rem;
+}
+
+.block2__carousel__heading > button {
+  margin-top: 1rem;
+}
+
+/* Block 3 */
+
+.featured {
+  text-align: center;
+}
+
+.featured__featured-text {
+  margin: 5rem 2rem;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+.featured__carousel__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+/* block 4 */
+
+.clients {
+  padding: 8rem 0rem;
+
+  background-color: black;
+  text-align: center;
+}
+
+.clients > h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.clients__clients-list {
+  grid-template-columns: repeat(5, 1fr);
+  align-content: center;
+  padding: 2rem;
+  margin: auto;
+}
+
+.clients__client-list_client {
+  align-self: center;
+}
+
+.clients__client-list_client > img {
+  text-align: center;
+  height: 3rem;
+}
+
+.block5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.culture__image {
+  background-image: url(/images/home/logos/Clip.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.culture__heading {
+  position: relative;
+  padding: 80px;
+}
+
+.culture__heading > h3 {
+  padding: 2rem 0;
+}
+
+.culture__heading > h1 {
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+.culture__heading__button {
+  margin-top: 5rem;
+}
+
+h3.culture__heading__nostyle {
+  font-weight: 400;
+  font-size: larger;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .grid,
+  .container.grid.header {
+    grid-template-columns: 1fr;
+  }
+
+  .header__image {
+    background-image: url(/images/home/Clip.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .culture__image {
+    background-image: url(/images/home/logos/Clip.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid,
+  .container.grid.header {
+    grid-template-columns: 1fr;
+  }
+
+  .header__image {
+    background-image: url(/images/home/Clip.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .culture__image {
+    background-image: url(/images/home/logos/Clip.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+  }
+
+  .header__heading {
+    padding: 40px 20px;
+  }
+
+  .culture__heading {
+    padding: 40px 20px;
+  }
+
+  .clients__clients-list {
+    grid-template-columns: repeat(1fr);
+    gap: 50px;
+    align-content: center;
+    padding: 2rem;
+    margin: auto;
+  }
+}
