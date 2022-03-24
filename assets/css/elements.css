@@ -23,7 +23,58 @@ section {
   width: 100%;
   height: 100px;
 }
-
+.nav-mobile {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-mobile li {
+  cursor: pointer;
+}
+.nav-mobile-sidebar-container {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  display: none;
+}
+.mobile-sidebar-close {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.9);
+  transform: translateX(-500px);
+  transition: 3ms ease-in-out;
+  cursor: pointer;
+}
+.nav-mobile-sidebar {
+  width: 60%;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transform: translateX(-500px);
+  transition: 2s ease-in-out;
+}
+.show {
+  display: block;
+}
+.show-translate {
+  transform: translateX(0px);
+  transition: 2s ease-in-out;
+}
+.nav-mobile-sidebar ul li {
+  list-style: none;
+  margin: 20px 0px;
+  text-align: center;
+}
 .nav {
   height: 100%;
   display: flex;
@@ -33,11 +84,11 @@ section {
 }
 
 .nav--container {
-  display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   gap: 50px;
+  display: none;
 }
 
 .nav--container--item {
@@ -51,6 +102,15 @@ section {
   color: var(--secondary-color);
 }
 .logo {
-  margin: 0px 50px;
   height: 50px;
+}
+
+@media only screen and (min-width: 900px) {
+  .nav-mobile {
+    display: none;
+  }
+
+  .nav--container {
+    display: flex;
+  }
 }

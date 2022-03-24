@@ -214,4 +214,14 @@
   .commercial-container iframe {
     width: 80%;
   }
+  .commercial-text h3 {
+    font-size: 2rem;
+  }
+  .commercial-text h5 {
+    font-size: 3rem;
+  }
+  .commercial-text-container {
+    margin: 50px;
+    gap: 50px;
+  }
 }
